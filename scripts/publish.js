@@ -25,14 +25,14 @@ async function publish() {
     return;
   }
 
-  await (
+  await execa(
     require.resolve('lerna/cli'),
     ['publish', version, '--force-publish'],
-    { stdio: 'inherit' }
+    { stdio: 'inherit' },
   );
 
-  await execa('git', ['add', '-A'], { stdio: 'inherit' });
-  await execa('git', ['commit', '-m', `${version}`], { stdio: 'inherit' });
+  // await execa('git', ['add', '-A'], { stdio: 'inherit' });
+  // await execa('git', ['commit', '-m', `${version}`], { stdio: 'inherit' });
 }
 
 publish().catch((err) => {
