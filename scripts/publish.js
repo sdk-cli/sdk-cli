@@ -31,8 +31,8 @@ async function publish() {
     { stdio: 'inherit' },
   );
 
-  // await execa('git', ['add', '-A'], { stdio: 'inherit' });
-  // await execa('git', ['commit', '-m', `${version}`], { stdio: 'inherit' });
+  await execa('git', ['add', '-A'], { stdio: 'inherit' });
+  await execa('git', ['commit', '-m', `${version}`], { stdio: 'inherit' });
 }
 
 publish().catch((err) => {
