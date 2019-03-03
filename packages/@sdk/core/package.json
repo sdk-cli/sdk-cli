@@ -1,0 +1,11 @@
+{
+  "name": "@sdk/core",
+  "version": "0.0.0",
+  "description": "sdk core",
+  "main": "index.js",
+  "keywords": [
+    "sdk"
+  ],
+  "author": "zhangbo",
+  "license": "MIT"
+}
