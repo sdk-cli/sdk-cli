@@ -24,16 +24,12 @@ async function publish() {
     console.log('终止发布');
     return;
   }
-  console.log(version);
-  // const publishArguments = [
-  //   'publish',
-  //   version,
-  //   '--force-publish',
-  //   '--npmTag',
-  //   npmTag,
-  //   '*',
-  // ];
-  // await(require.resolve('lerna/cli'))
+  await (require.resolve('lerna/cli'), [
+    'publish',
+    version,
+    '--force-publish',
+    '*',
+  ], { stdio: 'inherit' });
 
   await execa('git', ['add', '-A'], { stdio: 'inherit' });
   await execa('git', ['commit', '-m', `${version}`], { stdio: 'inherit' });
