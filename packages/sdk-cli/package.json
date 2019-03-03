@@ -1,12 +1,12 @@
 {
   "name": "sdk-cli",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "skd cli",
   "main": "index.js",
   "bin": {
     "sdk": "cli.js"
   },
-  "keywords":[],
+  "keywords": [],
   "author": "zhangbo",
   "license": "MIT"
 }
