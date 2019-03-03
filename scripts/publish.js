@@ -24,12 +24,12 @@ async function publish() {
     console.log('终止发布');
     return;
   }
-  await (require.resolve('lerna/cli'), [
-    'publish',
-    version,
-    '--force-publish',
-    '*',
-  ], { stdio: 'inherit' });
+
+  await (
+    require.resolve('lerna/cli'),
+    ['publish', version, '--force-publish'],
+    { stdio: 'inherit' }
+  );
 
   await execa('git', ['add', '-A'], { stdio: 'inherit' });
   await execa('git', ['commit', '-m', `${version}`], { stdio: 'inherit' });
