@@ -1,6 +1,6 @@
 {
   "name": "sdk-cli",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "skd cli",
   "main": "index.js",
   "bin": {
@@ -11,6 +11,6 @@
   "license": "MIT",
   "gitHead": "fa59ccbcc4ad321ef1d883e28acc7a8488279e3f",
   "dependencies": {
-    "@sdk-cli/core": "^0.0.4"
+    "@sdk-cli/core": "^0.0.7"
   }
 }

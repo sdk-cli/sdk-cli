@@ -1,6 +1,6 @@
 {
   "name": "@sdk-cli/core",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "description": "sdk core",
   "main": "index.js",
   "keywords": [
