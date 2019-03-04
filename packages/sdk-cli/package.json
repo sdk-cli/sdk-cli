@@ -10,7 +10,7 @@
   "author": "zhangbo",
   "license": "MIT",
   "gitHead": "fa59ccbcc4ad321ef1d883e28acc7a8488279e3f",
-  "devDependencies": {
+  "dependencies": {
     "@sdk-cli/core": "^0.0.4"
   }
 }
