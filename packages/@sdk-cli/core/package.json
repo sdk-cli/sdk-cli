@@ -1,5 +1,5 @@
 {
-  "name": "@sdk/core",
+  "name": "@sdk-cli/core",
   "version": "0.0.4",
   "description": "sdk core",
   "main": "index.js",
@@ -8,5 +8,7 @@
   ],
   "author": "zhangbo",
   "license": "MIT",
-  "gitHead": "fa59ccbcc4ad321ef1d883e28acc7a8488279e3f"
+  "publishConfig": {
+    "access": "public"
+  }
 }
