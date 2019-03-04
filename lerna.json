@@ -1,6 +1,6 @@
 {
   "packages": [
-    "packages/@sdk/*",
+    "packages/@sdk-cli/*",
     "packages/sdk-cli"
   ],
   "version": "0.0.6"
